@@ -1,0 +1,21 @@
+$blue: #1345D5;
+$white :#FFFFFF;
+
+
+
+@font-face {
+    font-family: Visby !important;
+    src: url("../fonts/VisbyCF-Heavy.woff");
+}
+@font-face {
+    font-family: Visby-medium;
+    src: url("../fonts/VisbyCF-Medium.woff");
+}
+
+
+body{
+    font-weight: 800 !important;
+    font-family: Visby;
+}
+@import 'header';
+@import 'responsive'

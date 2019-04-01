@@ -1,0 +1,100 @@
+#header {
+    .top {
+    
+        .social {
+            display: inline-block;
+            a{
+
+                     i {
+                         width: 25px;
+                         height: 25px;
+                         background: $blue;
+                         color: $white;
+                         text-align: center;
+                         border-radius: 100%;
+                         line-height: 1.5;
+                         margin: 10px 0
+                     }
+                   
+                     &:hover{
+                         text-decoration: none;
+                     }
+            }
+              a:nth-of-type(2) {
+                  margin-left: 9px;
+              }
+       
+        }
+        .contact {
+            display: inline-block;
+            margin-left: 21px;
+            i{
+                    transform: rotateY(180deg);
+                    font-size: 16px;
+                    color: $blue;
+                    margin-right: 5px;
+            }
+            p {
+                display: inline-block;
+            }
+        }
+
+        .search-lang{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            .search-box{
+                position: relative;
+                margin-right: 15px;
+                input{
+                    	border-radius: 11.34px;
+                        background-color: #F2F2F2;
+                        padding: 2px 20px;
+                        font-weight: 500;
+                        border: none;
+                }
+                i{
+                    position: absolute;
+                    right: 10px;
+                    top: 6px;
+                    color: $blue;
+                }
+               input::placeholder{
+                   
+                   font-family: Visby-medium;
+               }
+            }
+
+            .language-selector{
+                margin-top: -2px;
+                img{
+                transform: scale(1.5);
+                       margin-top: -1px;
+                    margin-right: 4px;
+                }
+                button{
+                        color: #4A4A4A;
+                        background: white;
+                        border: none;
+                      font-weight: 800;
+                      padding: 0;
+                      font-size: 21px;
+                      &:focus{
+                          outline: none;
+                          border: none;
+                          box-shadow: none;
+                      }
+                      &::after{
+                          margin-left: 5px;
+                          color: $blue;
+                          vertical-align: 0.2em;
+                      }
+                }
+                .dropdown-menu{
+                        transform: translate3d(-24px, 31px, 0px);
+                        min-width: 6rem;
+                }
+            }
+        }
+    }
+}
