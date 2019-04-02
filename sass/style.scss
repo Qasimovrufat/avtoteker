@@ -16,6 +16,11 @@ $white :#FFFFFF;
 body{
     font-weight: 800 !important;
     font-family: Visby;
+    overflow-x: hidden;
+}
+.dropdown-menu-right{
+    right: 0 !important;
+    left: auto !important;
 }
 @import 'header';
 @import 'responsive'
