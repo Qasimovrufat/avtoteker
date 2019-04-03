@@ -3,10 +3,7 @@ $white :#FFFFFF;
 
 
 
-@font-face {
-    font-family: Visby !important;
-    src: url("../fonts/VisbyCF-Heavy.woff");
-}
+
 @font-face {
     font-family: Visby-medium;
     src: url("../fonts/VisbyCF-Medium.woff");
@@ -15,12 +12,23 @@ $white :#FFFFFF;
 
 body{
     font-weight: 800 !important;
-    font-family: Visby;
-    overflow-x: hidden;
+    font-family: Visby-medium !important;
+    width: auto;
+}
+.overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+}
+button:focus,input:focus{
+    outline: none;
 }
 .dropdown-menu-right{
     right: 0 !important;
     left: auto !important;
 }
 @import 'header';
-@import 'responsive'
+@import 'responsive';
+@import 'searchArea';

@@ -6,6 +6,10 @@ $(document).ready(function(){
         $(this).addClass("active")
     })
 
+    $(".btn-cancel").click(function(params) {
+        params.preventDefault()
+        $(".dropdown-menu").removeClass("show")
+    })
    
 
 

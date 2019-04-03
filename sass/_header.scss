@@ -1,6 +1,6 @@
 #header {
     .top {
-    
+       
         .social {
             display: inline-block;
             a{
@@ -91,7 +91,7 @@
                       }
                 }
                 .dropdown-menu{
-                        transform: translate3d(-24px, 31px, 0px);
+                        transform: translate3d(9px, 31px, 0px) !important;
                         min-width: 6rem;
                         .dropdown-item.active{
                             background: $blue !important;
@@ -102,6 +102,7 @@
     }
 
     .bottom{
+    
         .navbar{
             background: $blue !important;
             .nav-item{
@@ -170,6 +171,17 @@
 
                    
                 }
+                .dropdown-register{
+                    min-width: 35rem;
+               
+                }
+                     .btn-cancel {
+                         margin-left: 12px;
+                         color: $blue !important;
+                         border: 0.81px solid #1345D5 !important;
+                         border-radius: 2.43px;
+                         background: $white !important;
+                     }
             }
         }
 
