@@ -11,6 +11,6 @@ $(document).ready(function(){
         $(".dropdown-menu").removeClass("show")
     })
    
-
+    $('select').selectpicker();
 
 })

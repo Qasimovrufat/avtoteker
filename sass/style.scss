@@ -8,12 +8,20 @@ $white :#FFFFFF;
     font-family: Visby-medium;
     src: url("../fonts/VisbyCF-Medium.woff");
 }
-
+@mixin transition($property) {
+   -webkit-transition:$property;
+   -moz-transition: $property;
+   -o-transition: $property;
+   transition: $property;
+}
 
 body{
     font-weight: 800 !important;
     font-family: Visby-medium !important;
     width: auto;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100% !important;
 }
 .overlay {
         position: absolute;
