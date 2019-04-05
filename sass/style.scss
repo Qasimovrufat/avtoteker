@@ -23,6 +23,9 @@ body{
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100% !important;
 }
+button,a{
+                  @include transition(all 0.4s ease-in-out);
+}
 .overlay {
         position: absolute;
         width: 100%;
@@ -32,6 +35,7 @@ body{
 }
 button:focus,input:focus{
     outline: none;
+    border: none;
 }
 .dropdown-menu-right{
     right: 0 !important;
@@ -40,3 +44,4 @@ button:focus,input:focus{
 @import 'header';
 @import 'responsive';
 @import 'searchArea';
+@import 'slider-range';

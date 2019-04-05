@@ -108,13 +108,34 @@
             .nav-item{
                 margin-right: 30px;
                 .nav-link{
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    
                     font-size: 18px !important;
-                    font-weight: 500 !important;
+                    font-weight: 800 !important;
                     color: $white !important;
+                    @include transition(all 0.4s ease-in-out);
+                    &:hover{
+                        background: $white;
+                        color: $blue !important;
+                    }
                 }
             }
 
             .log-reg{
+                .btn-sign button:first-of-type{
+                    border: 1px solid transparent !important;
+                }
+
+                .btn-sign button:first-of-type:hover{
+                    background: $white;
+                    color: $blue;
+                    border: 1px solid $blue !important;
+                }
+                .btn-sign .btn-cancel:hover{
+                      background: $blue !important;
+                      color: $white !important;
+                }
                 .btn-group:first-child{
                     margin-right: 25px;
                 }
@@ -127,7 +148,11 @@
                     color: $white;
                     font-weight: 800;
                     padding: 3px 35px;
-                    
+                    @include transition(all 0.4s ease-in-out);
+                    &:hover{
+                        color: $blue !important;
+                        background: $white !important;
+                    }
                     &::after{
                         display: none;
                     }
