@@ -22,6 +22,10 @@
 }
 
 @media (max-width: 992px) {
+
+    #services .col-lg-4{
+        margin-bottom: 40px !important;
+    }
     .dropdown-login{
         left: 0 !important;
         right: auto !important;
@@ -54,6 +58,12 @@
    #search .title h1 {
        font-size: 50px !important;
        line-height: 66px !important;
+   }
+   .owl-prev{
+       left: -14px !important;
+   }
+   .single-brand-logo{
+    margin-right: 20px !important; 
    }
 }
 @media (max-width: 351px) {

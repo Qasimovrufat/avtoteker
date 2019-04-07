@@ -18,13 +18,14 @@ $white :#FFFFFF;
 body{
     font-weight: 800 !important;
     font-family: Visby-medium !important;
-    width: auto;
+ 
 }
+
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100% !important;
 }
 button,a{
-                  @include transition(all 0.4s ease-in-out);
+@include transition(all 0.4s ease-in-out);
 }
 .overlay {
         position: absolute;
@@ -32,6 +33,10 @@ button,a{
         height: 100%;
         left: 0;
         top: 0;
+}
+a:hover{
+    text-decoration: none;
+    color: none;
 }
 button:focus,input:focus{
     outline: none;
@@ -41,7 +46,27 @@ button:focus,input:focus{
     right: 0 !important;
     left: auto !important;
 }
+#google_map{
+    height: 500px !important;
+    width: 100%;
+}
+
 @import 'header';
 @import 'responsive';
 @import 'searchArea';
 @import 'slider-range';
+@import 'season';
+@import 'brand-carousel';
+@import 'brand-carousel';
+@import 'find-all';
+@import 'products';
+@import 'services';
+@import 'terms';
+@import 'footer';
+
+
+
+
+
+
+

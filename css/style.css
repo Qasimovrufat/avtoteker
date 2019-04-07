@@ -3,8 +3,7 @@
   src: url("../fonts/VisbyCF-Medium.woff"); }
 body {
   font-weight: 800 !important;
-  font-family: Visby-medium !important;
-  width: auto; }
+  font-family: Visby-medium !important; }
 
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 100% !important; }
@@ -22,6 +21,10 @@ button, a {
   left: 0;
   top: 0; }
 
+a:hover {
+  text-decoration: none;
+  color: none; }
+
 button:focus, input:focus {
   outline: none;
   border: none; }
@@ -29,6 +32,10 @@ button:focus, input:focus {
 .dropdown-menu-right {
   right: 0 !important;
   left: auto !important; }
+
+#google_map {
+  height: 500px !important;
+  width: 100%; }
 
 #header .top .social {
   display: inline-block; }
@@ -198,6 +205,9 @@ button:focus, input:focus {
   .navbar {
     padding: 0 1rem; } }
 @media (max-width: 992px) {
+  #services .col-lg-4 {
+    margin-bottom: 40px !important; }
+
   .dropdown-login {
     left: 0 !important;
     right: auto !important;
@@ -225,7 +235,13 @@ button:focus, input:focus {
 @media (max-width: 576px) {
   #search .title h1 {
     font-size: 50px !important;
-    line-height: 66px !important; } }
+    line-height: 66px !important; }
+
+  .owl-prev {
+    left: -14px !important; }
+
+  .single-brand-logo {
+    margin-right: 20px !important; } }
 @media (max-width: 351px) {
   .navbar .navbar-collapse {
     margin-left: 1rem !important; }
@@ -337,5 +353,310 @@ button:focus, input:focus {
     line-height: 14px;
     position: absolute;
     top: 55px; }
+
+#season {
+  padding: 44px 0 0 0; }
+  #season .season-box {
+    margin-bottom: 50px; }
+    #season .season-box .upper {
+      border-radius: 7px 7px 0 0;
+      background-color: #F7F7F7; }
+    #season .season-box .img {
+      background-color: #F7F7F7;
+      padding: 29px 39px 23px;
+      overflow: hidden;
+      height: 250px; }
+      #season .season-box .img img {
+        width: 97%;
+        height: 100%;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+    #season .season-box .lower {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      background: #1345D5;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
+      #season .season-box .lower h3 {
+        line-height: 24px;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        font-weight: 800; }
+    #season .season-box:hover img {
+      transform: scale(1.2); }
+
+#brand-carousel {
+  background-color: #F7F7F7;
+  padding: 20px 0 9px 0; }
+  #brand-carousel .single-brand-logo {
+    margin-right: 40px; }
+  #brand-carousel img {
+    width: 100%;
+    height: 60px;
+    vertical-align: middle; }
+  #brand-carousel .owl-nav {
+    display: block !important; }
+  #brand-carousel:hover .owl-nav .owl-prev {
+    opacity: 1;
+    visibility: visible; }
+  #brand-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+    visibility: visible; }
+  #brand-carousel .owl-nav .owl-prev, #brand-carousel .owl-next {
+    color: #1345D5 !important;
+    border-radius: 3px;
+    font-size: 25px !important;
+    height: 25px;
+    line-height: 20px !important;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    width: 25px;
+    opacity: 0;
+    visibility: hidden; }
+    #brand-carousel .owl-nav .owl-prev:focus, #brand-carousel .owl-next:focus {
+      outline: none; }
+    #brand-carousel .owl-nav .owl-prev:hover, #brand-carousel .owl-next:hover {
+      background-color: #1345D5 !important;
+      color: #FFFFFF !important; }
+  #brand-carousel .owl-next {
+    left: auto;
+    right: 0px; }
+  #brand-carousel .owl-prev {
+    right: auto;
+    left: -30px; }
+
+#brand-carousel {
+  background-color: #F7F7F7;
+  padding: 20px 0 9px 0; }
+  #brand-carousel .single-brand-logo {
+    margin-right: 40px; }
+  #brand-carousel img {
+    width: 100%;
+    height: 60px;
+    vertical-align: middle; }
+  #brand-carousel .owl-nav {
+    display: block !important; }
+  #brand-carousel:hover .owl-nav .owl-prev {
+    opacity: 1;
+    visibility: visible; }
+  #brand-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+    visibility: visible; }
+  #brand-carousel .owl-nav .owl-prev, #brand-carousel .owl-next {
+    color: #1345D5 !important;
+    border-radius: 3px;
+    font-size: 25px !important;
+    height: 25px;
+    line-height: 20px !important;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    width: 25px;
+    opacity: 0;
+    visibility: hidden; }
+    #brand-carousel .owl-nav .owl-prev:focus, #brand-carousel .owl-next:focus {
+      outline: none; }
+    #brand-carousel .owl-nav .owl-prev:hover, #brand-carousel .owl-next:hover {
+      background-color: #1345D5 !important;
+      color: #FFFFFF !important; }
+  #brand-carousel .owl-next {
+    left: auto;
+    right: 0px; }
+  #brand-carousel .owl-prev {
+    right: auto;
+    left: -30px; }
+
+#find-all {
+  position: relative;
+  padding: 163px 0;
+  background: url("../img/car-back.jpg") no-repeat center bottom;
+  background-size: cover; }
+  #find-all .overlay {
+    opacity: 0.6;
+    background-color: #000000; }
+  #find-all h2 {
+    font-size: 70px;
+    color: #FFFFFF;
+    line-height: 78px;
+    font-weight: 800; }
+  #find-all h4 {
+    font-weight: 800;
+    font-size: 35px;
+    color: #FFFFFF;
+    line-height: 78px;
+    margin-bottom: 50px; }
+  #find-all a {
+    margin-top: 50px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 13px 40px 18px;
+    background-color: #1345D5;
+    box-shadow: 0 0 8px 0 rgba(19, 69, 213, 0.45); }
+    #find-all a:hover {
+      background: #FFFFFF;
+      color: #1345D5; }
+
+#products {
+  padding: 59px 0 0 0; }
+  #products .title {
+    margin-bottom: 53px;
+    font-weight: 800;
+    color: #4A4A4A;
+    font-size: 30px; }
+  #products .product-box {
+    margin-bottom: 84px; }
+    #products .product-box:hover .details {
+      color: #FFFFFF;
+      background: #1345D5;
+      border-color: #1345D5;
+      box-shadow: 0 0 8px 0 rgba(19, 69, 213, 0.45); }
+    #products .product-box .brand {
+      margin-top: 30px; }
+      #products .product-box .brand h6 {
+        color: #4A4A4A;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px; }
+    #products .product-box .size p {
+      color: #4A4A4A;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px; }
+    #products .product-box .price p {
+      color: #4A4A4A;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px; }
+    #products .product-box .details {
+      border: 1px solid #1345D5;
+      border-radius: 3px;
+      color: #1345D5;
+      padding: 7px 23px; }
+  #products .upper {
+    box-shadow: 0 10px 0 #fff, 0 0 10px #ccc; }
+    #products .upper .img img {
+      width: 100%;
+      height: 100%; }
+
+#services {
+  position: relative;
+  background: url("../img/services-back.jpg") no-repeat center bottom;
+  background-size: cover;
+  padding-top: 67px; }
+  #services .overlay {
+    opacity: 0.48;
+    background-color: #000000; }
+  #services .col-lg-12 .title {
+    margin-bottom: 100px; }
+    #services .col-lg-12 .title h1 {
+      line-height: 61px;
+      font-size: 50px;
+      color: #FFFFFF;
+      font-weight: 800; }
+  #services .col-lg-4 {
+    margin-bottom: 107px; }
+    #services .col-lg-4 .title h6 {
+      color: #FFFFFF;
+      font-weight: 500; }
+    #services .col-lg-4 .content p {
+      text-align: justify;
+      font-weight: 500;
+      color: #FFFFFF;
+      font-size: 14px;
+      line-height: 18px; }
+
+#terms {
+  padding-top: 47px; }
+  #terms .box {
+    border: 1px solid #9797974a;
+    padding: 38px 34px;
+    margin-bottom: 47px;
+    border-radius: 24px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    #terms .box .icon {
+      margin-bottom: 23px; }
+      #terms .box .icon i {
+        font-size: 47px;
+        color: #1345D5;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+      #terms .box .icon .fa-phone {
+        transform: rotateY(180deg); }
+    #terms .box .title p {
+      font-size: 14px;
+      line-height: 25px;
+      color: #4A4A4A;
+      font-weight: 800;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    #terms .box .content p {
+      font-size: 14px;
+      line-height: 25px;
+      color: #4A4A4A;
+      font-weight: 500;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    #terms .box:hover {
+      background: #1345D5;
+      box-shadow: 0 0 10px 0 rgba(0, 47, 183, 0.59); }
+      #terms .box:hover .icon i {
+        color: #FFFFFF; }
+      #terms .box:hover p {
+        color: #FFFFFF; }
+
+footer {
+  background-color: #F7F7F7;
+  padding-top: 40px; }
+  footer .logo {
+    margin-bottom: 36px; }
+  footer .info {
+    display: flex; }
+    footer .info i {
+      color: #1345D5;
+      font-size: 15px;
+      margin-right: 7px;
+      margin-top: 5px; }
+    footer .info .fa-phone {
+      transform: rotateY(180deg); }
+  footer .social {
+    display: inline-block; }
+    footer .social a i {
+      width: 25px;
+      height: 25px;
+      background: #1345D5;
+      color: #FFFFFF;
+      text-align: center;
+      border-radius: 100%;
+      line-height: 1.5;
+      margin: 10px 0; }
+    footer .social a:hover {
+      text-decoration: none; }
+    footer .social a:nth-of-type(2) {
+      margin-left: 9px; }
+  footer .col-lg-12 p {
+    color: #4A4A4A;
+    font-family: "Visby CF";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px; }
 
 /*# sourceMappingURL=style.css.map */
