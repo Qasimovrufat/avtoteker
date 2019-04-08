@@ -241,7 +241,10 @@ button:focus, input:focus {
     left: -14px !important; }
 
   .single-brand-logo {
-    margin-right: 20px !important; } }
+    margin-right: 20px !important; }
+
+  #about .title img {
+    width: 70%; } }
 @media (max-width: 351px) {
   .navbar .navbar-collapse {
     margin-left: 1rem !important; }
@@ -658,5 +661,100 @@ footer {
     font-size: 10px;
     font-weight: 500;
     line-height: 12px; }
+
+#about {
+  padding: 100px 0; }
+  #about .title {
+    margin-bottom: 81px;
+    text-align: center; }
+  #about .content p {
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 35px;
+    color: #4A4A4A;
+    text-align: justify; }
+
+#tyres {
+  padding: 100px 0; }
+  #tyres .title {
+    margin-bottom: 81px;
+    text-align: center;
+    padding: 88px 165px 88px 140px;
+    display: inline-block;
+    background: url("../img/group-3.png") no-repeat center center;
+    background-size: cover; }
+    #tyres .title h1 {
+      color: #4A4A4A;
+      font-family: "Visby CF";
+      font-size: 65px;
+      font-weight: 800;
+      line-height: 35px;
+      text-align: center; }
+  #tyres .products {
+    margin-top: 51px; }
+  #tyres .sorting {
+    border-radius: 7px;
+    background-color: #1345D5; }
+    #tyres .sorting .sort {
+      display: flex;
+      margin: 15px 44px 5px 0; }
+      #tyres .sorting .sort p {
+        color: #FFFFFF;
+        font-family: "Visby CF";
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        width: 90px;
+        margin-top: 8px; }
+  #tyres .product-box {
+    margin-bottom: 84px; }
+    #tyres .product-box:hover .details {
+      color: #FFFFFF;
+      background: #1345D5;
+      border-color: #1345D5;
+      box-shadow: 0 0 8px 0 rgba(19, 69, 213, 0.45); }
+    #tyres .product-box .brand {
+      margin-top: 30px; }
+      #tyres .product-box .brand h6 {
+        color: #4A4A4A;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px; }
+    #tyres .product-box .size p {
+      color: #4A4A4A;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px; }
+    #tyres .product-box .price p {
+      color: #4A4A4A;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px; }
+    #tyres .product-box .details {
+      border: 1px solid #1345D5;
+      border-radius: 3px;
+      color: #1345D5;
+      padding: 7px 23px; }
+  #tyres .upper {
+    box-shadow: 0 10px 0 #fff, 0 0 10px #ccc; }
+    #tyres .upper .img img {
+      width: 100%;
+      height: 100%; }
+  #tyres .page-item.active .page-link {
+    background: #1345D5;
+    color: #FFFFFF; }
+  #tyres .page-link {
+    color: #4A4A4A;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1px 6px;
+    margin: 8px; }
+    #tyres .page-link i {
+      color: #1345D5; }
+  #tyres .next:hover, #tyres .prev:hover {
+    background: #1345D5; }
+    #tyres .next:hover i, #tyres .prev:hover i {
+      color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */
