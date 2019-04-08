@@ -208,6 +208,12 @@ button:focus, input:focus {
   #services .col-lg-4 {
     margin-bottom: 40px !important; }
 
+  #tyres .sort {
+    margin: 15px 44px 5px 15px !important; }
+
+  #tyres .sorting .sort p:first-of-type {
+    margin-right: 7px; }
+
   .dropdown-login {
     left: 0 !important;
     right: auto !important;
@@ -244,7 +250,10 @@ button:focus, input:focus {
     margin-right: 20px !important; }
 
   #about .title img {
-    width: 70%; } }
+    width: 70%; }
+
+  #tyres .title {
+    padding: 52px 70px 52px 70px !important; } }
 @media (max-width: 351px) {
   .navbar .navbar-collapse {
     margin-left: 1rem !important; }
@@ -756,5 +765,22 @@ footer {
     background: #1345D5; }
     #tyres .next:hover i, #tyres .prev:hover i {
       color: #FFFFFF; }
+
+#contact {
+  padding: 100px 0; }
+  #contact .title {
+    margin-bottom: 81px;
+    text-align: center;
+    padding: 88px 165px 88px 140px;
+    display: inline-block;
+    background: url("../img/group-3.png") no-repeat center center;
+    background-size: cover; }
+    #contact .title h1 {
+      color: #4A4A4A;
+      font-family: "Visby CF";
+      font-size: 65px;
+      font-weight: 800;
+      line-height: 35px;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

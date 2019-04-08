@@ -26,6 +26,12 @@
     #services .col-lg-4{
         margin-bottom: 40px !important;
     }
+    #tyres .sort{
+            margin: 15px 44px 5px 15px !important;
+    }
+    #tyres .sorting .sort p:first-of-type {
+        margin-right: 7px;
+    }
     .dropdown-login{
         left: 0 !important;
         right: auto !important;
@@ -67,6 +73,9 @@
    }
    #about .title img{
        width: 70%;
+   }
+   #tyres .title{
+       padding: 52px 70px 52px 70px !important;
    }
 }
 @media (max-width: 351px) {
