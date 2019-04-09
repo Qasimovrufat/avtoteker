@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop: true,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 4000,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         item: 5,
         responsive: {
@@ -26,6 +26,10 @@ $(document).ready(function(){
         }
     })
 
+    $("#clear").click(function name(params) {
+        params.preventDefault()
+        $(this).parents("form")[0].reset()
+    })
 
     $(".language-selector .dropdown-menu a").click(function() {
          $(".language-selector .dropdown-menu a").removeClass("active")

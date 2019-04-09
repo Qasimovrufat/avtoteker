@@ -20,6 +20,9 @@ body{
     font-family: Visby-medium !important;
  
 }
+footer .logo img{
+    width: 172px;
+}
 
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100% !important;
@@ -38,7 +41,7 @@ a:hover{
     text-decoration: none;
     color: none;
 }
-button:focus,input:focus{
+button:focus,input:focus,textarea:focus{
     outline: none;
     border: none;
 }
