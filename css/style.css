@@ -1,6 +1,9 @@
 @font-face {
   font-family: Visby-medium;
   src: url("../fonts/VisbyCF-Medium.woff"); }
+.deactive {
+  display: none !important; }
+
 body {
   font-weight: 800 !important;
   font-family: Visby-medium !important; }
@@ -263,6 +266,9 @@ button:focus, input:focus, textarea:focus {
 
   #tyres .title {
     padding: 52px 70px 52px 70px !important; }
+
+  #services-page .title {
+    padding: 52px 20px 52px 34px !important; }
 
   #contact .title {
     padding: 52px 40px 52px 40px !important; } }
@@ -832,5 +838,73 @@ footer {
   margin-bottom: 105px; }
   #map .container #google_map {
     border-radius: 7px; }
+
+#services-page {
+  padding: 100px 0; }
+  #services-page .title {
+    margin-bottom: 81px;
+    text-align: center;
+    padding: 88px 165px 88px 140px;
+    display: inline-block;
+    background: url("../img/group-3.png") no-repeat center center;
+    background-size: cover; }
+    #services-page .title h1 {
+      color: #4A4A4A;
+      font-family: "Visby CF";
+      font-size: 65px;
+      font-weight: 800;
+      line-height: 35px;
+      text-align: center; }
+  #services-page .service-box {
+    margin-bottom: 125px; }
+    #services-page .service-box .img {
+      display: inline-block;
+      padding: 29px;
+      margin-bottom: 30px;
+      background-color: #F7F7F7;
+      box-shadow: 0 0 13px 0 rgba(176, 176, 176, 0.44);
+      border-radius: 100%;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      #services-page .service-box .img:hover {
+        background-color: #1345D5;
+        box-shadow: 0 0 13px 0 rgba(176, 176, 176, 0.44); }
+      #services-page .service-box .img img:last-of-type {
+        display: none; }
+    #services-page .service-box h4 {
+      color: #4A4A4A;
+      font-family: "Visby CF";
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 20px; }
+  #services-page .service-img {
+    position: relative; }
+  #services-page .row.justify-content-end {
+    position: relative; }
+    #services-page .row.justify-content-end .row {
+      position: absolute;
+      z-index: 5;
+      top: 75%;
+      left: 0; }
+  #services-page .service-text {
+    background-color: #1345D5;
+    box-shadow: 0 7px 23px 0 rgba(0, 0, 0, 0.3);
+    padding: 17px 26px; }
+    #services-page .service-text p {
+      color: #FFFFFF;
+      font-family: "Visby CF";
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: justify; }
+    #services-page .service-text .moreBtn {
+      color: #FFFFFF;
+      font-family: "Visby CF";
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 19px;
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

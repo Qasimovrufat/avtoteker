@@ -1,6 +1,25 @@
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel({
+   $(".moreBtn").click(function name(params) {
+       params.preventDefault()
+       var dots =$(".dots")
+       var moreText =$(".more")
+       var btnText = $(".moreBtn")
+
+       if(moreText.hasClass("active")){
+           moreText.removeClass("active").addClass("deactive")
+           dots.removeClass("deactive").addClass("active")
+           btnText.text("Read more")
+       }
+       else{
+           moreText.removeClass("deactive").addClass("active")
+           dots.removeClass("active").addClass("deactive")
+           btnText.text("Read less")
+       }
+   })
+
+
+    $('.brand-logo-active').owlCarousel({
         loop: true,
         nav: true,
         autoplay: true,
@@ -25,6 +44,41 @@ $(document).ready(function(){
             }
         }
     })
+       $('.service-img').owlCarousel({
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 4000,
+           item: 5,
+           responsive: {
+               0: {
+                   items: 1
+               },
+               480: {
+                   items: 1
+               },
+               768: {
+                   items: 1
+               },
+               992: {
+                   items: 1
+               },
+               1000: {
+                   items: 1
+               }
+           }
+       })
+
+    $("#services-page .service-box .img").hover(function() {
+        $(this).find("img:first-of-type").css("display","none")
+        $(this).find("img:last-of-type").css("display", "block")
+        
+    },
+    function () {
+           $(this).find("img:first-of-type").css("display", "block")
+           $(this).find("img:last-of-type").css("display", "none")
+    }
+
+)
 
     $("#clear").click(function name(params) {
         params.preventDefault()
