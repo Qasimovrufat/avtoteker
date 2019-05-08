@@ -44,6 +44,32 @@ $(document).ready(function(){
             }
         }
     })
+
+    $('.related-products-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        item: 4,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
        $('.service-img').owlCarousel({
            loop: true,
            autoplay: true,
