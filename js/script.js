@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+
+    var active = parseInt( $(".page-item.active").text())
+    var totalPages = ($(".pagination > li").length ) - 2
+
+    if(active<3){
+        active = 3
+    }
+    if(active>totalPages-2){
+        active = totalPages-2
+    }
+    for(var i = active-2 ; i< active + 3;i++){
+         $( $(".pagination").children()[i]).css("display","block")
+    }
+   
+
    $(".moreBtn").click(function name(params) {
        params.preventDefault()
        var dots =$(".dots")

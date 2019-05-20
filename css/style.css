@@ -1,6 +1,9 @@
 @font-face {
   font-family: Visby-medium;
   src: url("../fonts/VisbyCF-Medium.woff"); }
+.page-item.num {
+  display: none; }
+
 .deactive {
   display: none !important; }
 

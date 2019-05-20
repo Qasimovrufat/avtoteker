@@ -14,6 +14,9 @@ $white :#FFFFFF;
    -o-transition: $property;
    transition: $property;
 }
+.page-item.num{
+    display: none;
+}
 .deactive{
     display: none !important;
 }
