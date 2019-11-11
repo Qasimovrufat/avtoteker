@@ -32,6 +32,31 @@ $(document).ready(function(){
            btnText.text("Read less")
        }
    })
+   $('.slider-active').owlCarousel({
+    loop: true,
+    dots:true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    item: 3,
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 1
+        },
+        768: {
+            items: 1
+        },
+        992: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
 
 
     $('.brand-logo-active').owlCarousel({
@@ -123,7 +148,7 @@ $(document).ready(function(){
 
     $("#clear").click(function name(params) {
         params.preventDefault()
-        $(this).parents("form")[0].reset()
+        $("form")[0].reset()
     })
 
     $(".language-selector .dropdown-menu a").click(function() {
@@ -144,12 +169,13 @@ $(document).ready(function(){
 
     // Without JQuery
    $(".Reset").click(function(params) {
-      
-       $(this).parents("form").reset()
+      params.preventDefault()
+     
+      $(this).parents("form").find("select").val('default').selectpicker("refresh")
+    //   $("#tyreform")[0].reset()
    })
 
    $(".tab-list a").click(function(e) {
-       console.log("sdsad")
        e.preventDefault()
        $(".tab-list a").removeClass("active");
        $(this).addClass("active");

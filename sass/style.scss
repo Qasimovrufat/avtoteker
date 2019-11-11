@@ -14,6 +14,34 @@ $white :#FFFFFF;
    -o-transition: $property;
    transition: $property;
 }
+
+#slider{
+   position: relative;
+    .single-slider{
+        padding-top:300px;
+        padding-bottom: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .owl-dots{
+        position: absolute;
+        bottom: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        .owl-dot span{
+            background-color: rgba(222,222,222,0.6);
+        }
+        .owl-dot.active span{
+            width: 13px;
+            height: 13px;
+            background-color: #FFFFFF !important;
+        }
+    }
+    
+}
+
+
 .page-item.num{
     display: none;
 }

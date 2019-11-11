@@ -183,143 +183,160 @@
 
         </div>
     </section>
+    <section id="slider">
+        <div class="owl-carousel owl-theme slider-active">
+            <div class="single-slider" style="background-image:url(img/5cc89651bdcd2.png); ">
+            </div>
+            <div class="single-slider" style="  background-image:url(img/5cc894625e338.png);">
+            </div>
+        </div>
+    </section>
     <section id="search">
-        
-        <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-12">
                     <div class="search-area text-center">
+                        <div class="title">
+                            <h3>
+                                Search
+                            </h3>
+                        </div>
                         <div class="tab-list">
                             <a class="active" href="#searchTyres">Search Tyres</a>
                             <a href="#searchCar">Search Car </a>
                         </div>
                         <div class="tab-content active" id="searchTyres">
                             <div class="tab-search">
-                                <form>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Brand</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
+                                <form action="/tyres/" method="GET" id="searchbytyres">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select data-live-search="true" name="Width" id="WidthId" data-width="100%" class="selectpicker">
+                                                    <option value="0">Model</option>
+                                                    <option>Ketchup</option>
+                                                    <option>Barbecue</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select data-live-search="true" name="Height" id="HeightId" data-width="100%" class="selectpicker">
+                                                    <option value="0">Model</option>
+                                                    <option>Ketchup</option>
+                                                    <option>Barbecue</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select data-live-search="true" name="Radius" id="RadiusId" data-width="100%" class="selectpicker">
+                                                    <option value="0">Model</option>
+                                                    <option>Ketchup</option>
+                                                    <option>Barbecue</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select data-live-search="true" name="BrandId" id="BrandId" data-width="100%" class="selectpicker">
+                                                    <option value="0">Model</option>
+                                                    <option>Ketchup</option>
+                                                    <option>Barbecue</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Model</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Width</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Height</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Radius</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="selectpicker">
-                                            <option value="0">Usage status</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group range-slider">
-                                        <p>Price</p>
-                                        <b>10</b>
-                                        <input data-slider-tooltip="show" id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
-                                            data-slider-step="5" data-slider-value="[0,1000]" />
-                                        <b>1000</b>
-                                    </div>
-                                    <hr>
-                                    <button type="submit" class="btnSearch">Search </button>
-                                    <a href="" class="Reset">Reset all filters</a>
-                                </form>
+
+
+                                    <button type="submit" class="btnSearch">@res.search </button>
+                                    <a href="" class="Reset">Clear all</a>
+
                             </div>
+                            </form>
                         </div>
                         <div class="tab-content" id="searchCar">
-                            <div class="tab-search">
-                                <form>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Car</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
+                            <div class="tab-search" id="car">
+                                <form  id="searchbycar" action="/tyres/" method="GET">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section </p>
+                                                </div>
+                                                <select name="BrandIdCar" id="BrandIdCar" data-live-search="true" class="selectpicker">
+                                                        <option selected disabled value="0">@*@res.pleaseSelect*@ @res.car</option>
+
+                                                        @foreach (var car in Model.carbrand)
+                                                        {
+                                                            <option value="@car.Id">@car.Name</option>
+                                                        }
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select name="ModelIdCar" disabled id="ModelIdCar" data-live-search="true" class="selectpicker">
+                                                 
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select name="YearCar" disabled id="YearCar" data-live-search="true" class="selectpicker">
+                                            
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <div class="name">
+                                                    <i></i>
+                                                    <p>Cross Section Width</p>
+                                                </div>
+                                                <select name="BanCar" disabled id="BanCar" data-live-search="true" class="selectpicker">
+                                               
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Model</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Width</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Height</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select data-live-search="true" class="selectpicker">
-                                            <option value="0">Radius</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="selectpicker">
-                                            <option value="0">Usage status</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group range-slider">
-                                        <p>Price</p>
-                                        <b>10</b>
-                                        <input data-slider-tooltip="show" id="ex1" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
-                                            data-slider-step="5" data-slider-value="[0,1000]" />
-                                        <b>1000</b>
-                                    </div>
-                                    <hr>
+
+
                                     <button type="submit" class="btnSearch">Search </button>
-                                    <a href="" class="Reset">Reset all filters</a>
-                                </form>
+                                    <a href="" class="Reset">Clear all</a>
+
                             </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-7 align-self-center offset-lg-1">
-                    <div class="title">
-                        <h1>CUSTOM WHEELS & RIMS</h1>
-                    </div>
-                </div>
 
+                </div>
             </div>
-        </div>
+        
     </section>
     <section id="season">
         <div class="container">
@@ -438,7 +455,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/1459429206_maxx050.jpg20171128-221157.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -465,7 +482,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/Autogrip_Ecosaver.png20180316-040305.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -490,7 +507,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/bridgestone gr90.jpg20180529-040555.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -515,7 +532,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/conti premiumcontact5.jpg20181023-001009.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -540,7 +557,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/four-Season.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -565,7 +582,7 @@
                         <div class="product-box">
                             <div class="upper">
                                 <div class="img">
-                                    <img src="img/summer.jpg" alt="">
+                                    <img src="img/runflat.jpg20170214-100220.jpg" alt="">
                                 </div>
                             </div>
                             <div class="lower">
@@ -780,15 +797,15 @@
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-lg-12">
                     <p>
-                            © 2016 AVTOTEKER.AZ All Rights Reserved. Powered by
+                        © 2016 AVTOTEKER.AZ All Rights Reserved. Powered by
                     </p>
                 </div>
             </div>
